@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  root 'pages/home'
+  root 'pages#home'
 
-  get 'pages/community'
+  get '/community', to: 'pages#community'
 
-  get 'pages/leasing'
+  get '/leasing', to: 'pages#leasing'
 
-  get 'pages/contact'
+  get '/contact', 'pages#contact'
 
-  get 'pages/application'
+  get '/application', to: 'pages#application'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
